@@ -1,0 +1,13 @@
+[settings]
+os=Linux
+arch=x86_64
+compiler=gcc
+compiler.version=11.3
+compiler.libcxx=libstdc++11
+build_type=Debug
+[options]
+[conf]
+tools.system.package_manager:mode=install
+tools.system.package_manager:sudo=True
+[build_requires]
+[env]
