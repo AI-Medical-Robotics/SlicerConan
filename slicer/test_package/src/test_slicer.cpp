@@ -3,6 +3,9 @@
 #include <vtkMRMLNode.h>
 #include <gtest/gtest.h>
 
+// Test MRML, Logic, Widgets
+// Test VTK, ZMQ
+
 TEST(MRMLCoreTest, CreateNode) {
     // Create a test MRML scene
     vtkSmartPointer<vtkMRMLScene> scene = vtkSmartPointer<vtkMRMLScene>::New();
@@ -18,3 +21,5 @@ TEST(MRMLCoreTest, CreateNode) {
     EXPECT_EQ(scene->GetNumberOfNodes(), 1);
     EXPECT_EQ(scene->GetNodeByID(node->GetID()), node);
 }
+
+
